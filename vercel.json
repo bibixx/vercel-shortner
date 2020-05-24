@@ -1,0 +1,8 @@
+{
+  "routes": [
+    { "src": "/l/(.+)", "dest": "/api/link.ts" },
+    { "handle": "filesystem" },
+    { "src": "^/([^/]*)$", "dest": "/api/link.ts" },
+    { "src": "/(.*)", "dest": "/404" }
+  ]
+}
